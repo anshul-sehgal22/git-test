@@ -12,3 +12,7 @@ def multiply(a,b):
 
 def devide(a,b):
     pass
+
+
+def square(a,b):
+    pass
