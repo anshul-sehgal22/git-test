@@ -15,3 +15,9 @@ def multiplication(a,b):
 
 def division(a,b):
     return a/b
+
+
+def square(a):
+    return a*a
+
+
