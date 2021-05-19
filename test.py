@@ -1,5 +1,5 @@
 print("Python Work")
 
 
-def math_add(a,b)
-    return a+b
+def subtraction(a,b):
+    return a-b
