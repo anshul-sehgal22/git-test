@@ -1,10 +1,14 @@
-node {
-    stage 'Checkout'
-
-    checkout scm
-    
-    stage 'Do something'
-    
-    sh 'cat test.py'
-    
-}    
+pipeline {
+    stages {
+        stage('checkout') {
+            steps {
+                    checkout scm
+            }
+        }
+        stage('Do Something') {
+            steps {
+                    sh 'cat test.py'
+            }
+        }
+    }
+}
