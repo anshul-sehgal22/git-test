@@ -10,13 +10,9 @@ pipeline {
 		OWERN="Anshul Sehgal"
 	}
 	
+	checkout scm
+	
 	stages {
-		stage('Checkout') {
-			steps {
-				checkout scm
-			}
-		}
-		
 		stage('Do Something') {
 			steps {
 				sh 'ls -ltr'
