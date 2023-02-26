@@ -12,11 +12,15 @@ pipeline {
 	
 	stages {
 		stage('Checkout') {
-			checkout scm
+			steps {
+				checkout scm
+			}
 		}
 		
 		stage('Do Something') {
-			sh 'ls -ltr'
+			steps {
+				sh 'ls -ltr'
+			}
 		}
 	}
 	
